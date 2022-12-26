@@ -162,6 +162,11 @@
     </main>
 
     <script>
+        $(document).ready(function() {
+            $(".main_section").css("height", $(window).height());
+        });
+
+
         var swiper = new Swiper(".mySwiper", {
           pagination: {
             el: ".swiper-pagination",
