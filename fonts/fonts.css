@@ -1,0 +1,48 @@
+  @font-face {
+    font-family: "NanumMyeongjo";
+    font-weight: 400;
+    src: url("./Nanum_Myeongjo/NanumMyeongjo-Regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "NanumMyeongjo";
+    font-weight: 500;
+    src: url("./Nanum_Myeongjo/NanumMyeongjo-Bold.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "NanumMyeongjo";
+    font-weight: 600;
+    src: url("./Nanum_Myeongjo/NanumMyeongjo-ExtraBold.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "SortsMillGoudy";
+    font-weight: 400;
+    src: url("./Sorts_Mill_Goudy/SortsMillGoudy-Regular.ttf") format("truetype");
+  }
+
+
+  @font-face {
+    font-family: "timesNewRoman";
+    font-weight: 400;
+    src: url("./Times-New-Roman/times-new-roman.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "timesNewRoman";
+    font-weight: 600;
+    src: url("./Times-New-Roman/times-new-roman-bold.ttf") format("truetype");
+  }
+
+  
+  html,
+  body {
+    font-size: 16px;
+      word-break: keep-all;
+  }
+  
+  body {
+    font-family: timesNewRoman, NanumMyeongjo, sans-serif;
+  }
+  
+  .SortsMillGoudy {
+    font-family: SortsMillGoudy, sans-serif;
+  }
