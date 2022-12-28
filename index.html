@@ -54,34 +54,53 @@
                 </ul>
             </div>
         </section>
-        
+
         <section class="gallery_section">
             <h6 class="section_title">Gallery</h6>
             <p>*사진을 옆으로 넘겨주세요.</p>
 
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">Slide 1</div>
-                  <div class="swiper-slide">Slide 2</div>
-                  <div class="swiper-slide">Slide 3</div>
-                  <div class="swiper-slide">Slide 4</div>
-                  <div class="swiper-slide">Slide 5</div>
-                  <div class="swiper-slide">Slide 6</div>
-                  <div class="swiper-slide">Slide 7</div>
-                  <div class="swiper-slide">Slide 8</div>
-                  <div class="swiper-slide">Slide 9</div>
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
-              </div>
+            </div>
         </section>
 
         <section class="map_section">
             <h6 class="section_title">Location</h6>
 
             <div class="map_area">
-                <div class="map_box"></div>
+                <div class="map_box">
+                    <a href="https://map.kakao.com/?urlX=507612&urlY=1112685&urlLevel=3&map_type=TYPE_MAP&map_hybrid=false"
+                        target="_blank">
+                        <img src="https://map2.daum.net/map/mapservice?FORMAT=PNG&SCALE=2.5&MX=507612&MY=1112685&S=0&IW=504&IH=310&LANG=0&COORDSTM=WCONGNAMUL&logo=kakao_logo"
+                            style="display: block; width: 100%;">
+                    </a>
+                    <div class="hide" style="overflow:hidden;padding:9px 11px;background-color:#f9f9f9;">
+                        <strong style="float: left;">
+                            <img src="https://t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png"
+                                width="72" height="16" alt="카카오맵">
+                        </strong>
+                        <div style="float: right;position:relative">
+                            <a style="font-size:12px;text-decoration:none;float:left;height:15px;padding-top:1px;line-height:15px;color:#000"
+                                target="_blank"
+                                href="https://map.kakao.com/?urlX=507612&urlY=1112685&urlLevel=3&map_type=TYPE_MAP&map_hybrid=false">
+                                지도 크게 보기
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 <h6>2023년 03월 04일 토요일 AM 11시 30분<br>
                     더채플앳논현 라포레홀 6F</h6>
             </div>
@@ -116,17 +135,17 @@
                 <h6>신랑측 마음 전할 곳</h6>
                 <ul>
                     <li>
-                        <p>신랑  -  송세민(국민은행)</p>
+                        <p>신랑 - 송세민(국민은행)</p>
                         <div class="copy_area">
                             <h4>483712931200035</h4>
-                            <button type="button">복사</button>
+                            <button type="button" onclick="copy('국민 483712931200035')">복사</button>
                         </div>
                     </li>
                     <li>
-                        <p>신랑측 혼주  -  송세민(국민은행)</p>
+                        <p>신랑측 혼주 - 송세민(국민은행)</p>
                         <div class="copy_area">
                             <h4>483712931200035</h4>
-                            <button type="button">복사</button>
+                            <button type="button" onclick="copy('국민 483712931200035')">복사</button>
                         </div>
                     </li>
                 </ul>
@@ -137,17 +156,17 @@
                 <h6>신부측 마음 전할 곳</h6>
                 <ul>
                     <li>
-                        <p>신부  -  장보람(우리은행)</p>
+                        <p>신부 - 장보람(우리은행)</p>
                         <div class="copy_area">
                             <h4>483712931200035</h4>
-                            <button type="button">복사</button>
+                            <button type="button" onclick="copy('우리 483712931200035')">복사</button>
                         </div>
                     </li>
                     <li>
-                        <p>신부측 혼주  -  장석주(국민은행)</p>
+                        <p>신부측 혼주 - 장석주(국민은행)</p>
                         <div class="copy_area">
                             <h4>483712931200035</h4>
-                            <button type="button">복사</button>
+                            <button type="button" onclick="copy('우리 483712931200035')">복사</button>
                         </div>
                     </li>
                 </ul>
@@ -159,24 +178,48 @@
             <p>감사합니다.</p>
         </section>
 
+        <div id="toast">
+            복사되었습니다
+        </div>
+
     </main>
 
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             $(".main_section").css("height", $(window).height());
         });
 
 
         var swiper = new Swiper(".mySwiper", {
-          pagination: {
-            el: ".swiper-pagination",
-            type: "fraction",
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
+            pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
         });
+
+
+        const copy = (text) => {
+            // 임시의 textarea 생성
+            const $textarea = document.createElement("textarea");
+
+            // body 요소에 존재해야 복사가 진행됨
+            document.body.appendChild($textarea);
+
+            // 복사할 특정 텍스트를 임시의 textarea에 넣어주고 모두 셀렉션 상태
+            $textarea.value = text;
+            $textarea.select();
+
+            // 복사 후 textarea 지우기
+            document.execCommand('copy');
+            document.body.removeChild($textarea);
+
+            alert("복사되었습니다.");
+        }
+
     </script>
 
 </body>

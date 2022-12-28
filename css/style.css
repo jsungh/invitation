@@ -30,6 +30,8 @@ main {
     margin-top: -3px;
 }
 .main_section_header > p {
+    flex: 0 0 100px;
+    max-width: 100px;
     font-size: 13px;
 }
 .main_section_header > *:first-child {
@@ -133,8 +135,11 @@ main {
     text-align: center;
 }
 .map_box {
-    height: 150px;
     background-color: #fff;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.1);
+}
+.map_box a {
+    display: block;
 }
 .map_area > h6 {
     margin-top: 30px;
@@ -195,4 +200,40 @@ main {
 }
 .donate_section > article li + li {
     border-top: 1px solid #D8D6D3;
+}
+.donate_section .copy_area {
+    display: flex;
+    margin-top: 12px;
+    align-items: center;
+}
+.donate_section .copy_area h4 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    font-family: NanumMyeongjo, sans-serif;
+    letter-spacing: -0.04em;
+}
+.donate_section .copy_area button {
+    margin-left: 12px;
+    padding: 0;
+    font-size: 12px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #181817;
+    letter-spacing: -0.04em;
+}
+.bottom_section {
+    padding-top: 120px;
+    padding-bottom: 70px;
+    border-top: 1px solid #D8D6D3;
+    text-align: center;
+    color: #A4A29A;
+}
+.bottom_section h6,
+.bottom_section p {
+    line-height: 2.1;
+    font-weight: 500;
+    font-family: SortsMillGoudy, sans-serif;
+    letter-spacing: -0.015em;
 }
