@@ -21,13 +21,13 @@
 <body>
     <main>
         <section class="main_section">
-            <div class="main_section_header jsh_ani fadeInUp">
+            <div class="main_section_header mainTextBox">
                 <p>The chaple<br>Nonhyeon 6F</p>
                 <h5>송세민<span class="circle_ico"></span>장보람</h5>
                 <p>2023.03.04<br>am11:30</p>
             </div>
 
-            <div class="main_section_footer jsh_ani fadeInUp" data-delay="50">
+            <div class="main_section_footer mainTextBox">
                 <h6>2023년 03월 04일 토요일 AM 11시 30분<br>
                     더채플앳논현 라포레홀 6F</h6>
             </div>
@@ -64,18 +64,24 @@
 
             <div class="swiper mySwiper jsh_ani fadeInUp">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">Slide 1</div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                    <div class="swiper-slide">Slide 4</div>
-                    <div class="swiper-slide">Slide 5</div>
-                    <div class="swiper-slide">Slide 6</div>
-                    <div class="swiper-slide">Slide 7</div>
-                    <div class="swiper-slide">Slide 8</div>
-                    <div class="swiper-slide">Slide 9</div>
+                    <div class="swiper-slide" style="background-image: url('./images/1.jpg');"></div>
+                    <div class="swiper-slide" style="background-image: url('./images/2.jpg');"></div>
+                    <div class="swiper-slide" style="background-image: url('./images/3.jpg');"></div>
+                    <div class="swiper-slide" style="background-image: url('./images/4.jpg');"></div>
+                    <div class="swiper-slide" style="background-image: url('./images/5.jpg');"></div>
+                    <div class="swiper-slide" style="background-image: url('./images/6.jpg');"></div>
+                    <div class="swiper-slide" style="background-image: url('./images/7.jpg');"></div>
+                    <div class="swiper-slide" style="background-image: url('./images/8.jpg');"></div>
+                    <div class="swiper-slide" style="background-image: url('./images/10.jpg');"></div>
+                    <div class="swiper-slide" style="background-image: url('./images/11.jpg');"></div>
+                    <div class="swiper-slide" style="background-image: url('./images/12.jpg');"></div>
+                    <div class="swiper-slide" style="background-image: url('./images/13.jpg');"></div>
+                    <div class="swiper-slide" style="background-image: url('./images/14.jpg');"></div>
+                    <div class="swiper-slide" style="background-image: url('./images/15.jpg');"></div>
+                    <div class="swiper-slide" style="background-image: url('./images/16.jpg');"></div>
+                    <div class="swiper-slide" style="background-image: url('./images/17.jpg');"></div>
+                    <div class="swiper-slide" style="background-image: url('./images/18.jpg');"></div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
             </div>
         </section>
@@ -187,6 +193,7 @@
             $(".main_section").css("height", $(window).height());
 
             var jshAni = new JshAni($(".jsh_ani"), {scrollShow : true});
+            $(".mainTextBox").addClass("active");
         });
 
 
@@ -195,10 +202,8 @@
                 el: ".swiper-pagination",
                 type: "fraction",
             },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
+            slidesPerView: 1.15,
+            spaceBetween: 10,
         });
 
 
