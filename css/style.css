@@ -286,11 +286,14 @@ header {
     color: #131312;
 }
 .bottom_section {
-    padding-top: 120px;
+    padding-top: 50px;
     padding-bottom: 140px;
     border-top: 1px solid #D8D6D3;
     text-align: center;
     color: #A4A29A;
+}
+.bottom_section .text_box {
+    padding-top: 116px;
 }
 .bottom_section h6,
 .bottom_section p {
@@ -336,4 +339,24 @@ header {
 
 .donateBody {
     display: none;
+}
+.btn_clip {
+    display: inline-flex;
+    padding: 0 0 3px 0;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #A4A29A;
+    color: #767368;
+    background-color: transparent;
+}
+.btn_clip > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+.btn_clip > p {
+    margin-top: 2px;
+    margin-left: 3px;
+    line-height: 1;
+    font-weight: 500;
+    font-family: SortsMillGoudy, sans-serif;
 }
