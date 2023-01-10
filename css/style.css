@@ -18,7 +18,14 @@ main {
     flex-direction: column;
     justify-content: space-between;
 }
-
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 31px 20px 0; 
+    z-index: 5;
+}
 .main_section_header {
     display: flex;
     align-items: flex-start;
